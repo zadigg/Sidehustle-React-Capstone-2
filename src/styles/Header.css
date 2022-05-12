@@ -1,0 +1,16 @@
+.Header_Structure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 60px;
+  background-color: #001529;
+  color: white;
+  font-size: 1rem;
+}
+
+.menu_toggle {
+  width: 20px;
+  cursor: pointer;
+}

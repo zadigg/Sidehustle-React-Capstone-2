@@ -1,0 +1,17 @@
+.structure {
+  display: flex;
+}
+
+.sidebar_structure {
+  width: 199px;
+  background-color: #001529;
+  height: 100vh;
+  color: white;
+}
+
+.detail_structure {
+  /* background-color: #f0f2f5; */
+  background-color: #f0f2f5;
+  height: 100vh;
+  width: 100%;
+}

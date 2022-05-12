@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Login from "./components/Login";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "./components/Home";
+import NotFound from "./components/NotFound";
+import Client from "./components/Client";
+import Team from "./components/Team";
+import ToggleContext from "./context/ToggleContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <BrowserRouter>
+        <ToggleContext>
+          <Routes>
+            <Route exact path="/" element={<Login />} />
+            <Route exact path="/home" element={<Home />} />
+            <Route exact path="/team" element={<Team />} />
+            <Route exact path="/client" element={<Client />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </ToggleContext>
+      </BrowserRouter>
     </div>
   );
 }

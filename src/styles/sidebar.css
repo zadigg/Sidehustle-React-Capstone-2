@@ -1,0 +1,30 @@
+.sidebar_main {
+  margin: 20px;
+}
+
+.sidebar_Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aqua;
+  padding: 10px;
+  background-color: #334454;
+  font-weight: bold;
+}
+
+.linkStyle {
+  font-weight: bold;
+}
+
+.linkStyle > div {
+  margin-top: 20px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.linkStyle > div:hover {
+  background-color: #334454;
+  text-decoration: none;
+}
