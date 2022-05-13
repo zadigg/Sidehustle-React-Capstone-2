@@ -28,6 +28,14 @@ const Sidebar = () => {
         >
           <div>Clients</div>
         </Link>
+
+        <Link
+          className="linkStyle"
+          style={{ textDecoration: "none" }}
+          to="/product"
+        >
+          <div>Products</div>
+        </Link>
       </div>
     </div>
   );
